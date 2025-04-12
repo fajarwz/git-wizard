@@ -15,7 +15,7 @@ const git = simpleGit();
 program.name('git-wizard').description('🛠️ A CLI tool to automate Git workflows').version('1.0.0');
 
 program.command('init').description('🧹 Initialize a new Git repository and set remote URL')
-  .action(() => init({ inquirer, git: simpleGit(), chalk, fs, path }));
+  .action(() => init({ inquirer, git, chalk, fs, path }));
 program.command('new-feature').description('🌱 Create and switch to a new feature branch')
   .action(() => newFeature({ inquirer, git, chalk }));
 program.command('commit').description('✍️ Create a conventional commit using interactive prompts')
