@@ -1,0 +1,27 @@
+{
+  "name": "@fajarwz/git-wizard",
+  "version": "1.0.0",
+  "description": "A CLI tool to automate Git workflows",
+  "main": "src/index.js",
+  "bin": {
+    "git-wizard": "./src/index.js",
+    "gw": "./src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "workflows",
+    "automation"
+  ],
+  "author": "fajarwz",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "inquirer": "^12.5.2",
+    "simple-git": "^3.27.0"
+  }
+}
