@@ -91,6 +91,12 @@ Push changes to the remote repository.
 gw push
 ```
 
+## Run tests
+
+```bash
+npm test
+```
+
 ## Contributing
 We welcome contributions! If you'd like to help improve Git Wizard.
 

@@ -1,10 +1,4 @@
-import inquirer from 'inquirer';
-import simpleGit from 'simple-git';
-import chalk from 'chalk';
-
-const git = simpleGit();
-
-export default async function newFeature() {
+export default async function newFeature({ inquirer, git, chalk }) {
   try {
     const { featureName } = await inquirer.prompt([
       {

@@ -1,12 +1,4 @@
-import simpleGit from 'simple-git';
-import chalk from 'chalk';
-import path from 'path';
-import inquirer from 'inquirer';
-import fs from 'fs';
-
-const git = simpleGit();
-
-export default async function init() {
+export default async function init({ inquirer, git, chalk, path, fs }) {
   try {
     // Initialize Git repository
     await git.init();

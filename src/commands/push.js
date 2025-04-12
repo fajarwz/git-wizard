@@ -1,9 +1,4 @@
-import simpleGit from 'simple-git';
-import chalk from 'chalk';
-
-const git = simpleGit();
-
-export default async function push() {
+export default async function push({ git, chalk }) {
   try {
     // Get the current branch name
     const status = await git.status();

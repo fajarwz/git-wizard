@@ -1,10 +1,4 @@
-import inquirer from 'inquirer';
-import simpleGit from 'simple-git';
-import chalk from 'chalk';
-
-const git = simpleGit();
-
-export default async function commit() {
+export default async function commit({ inquirer, git, chalk }) {
   try {
     const answers = await inquirer.prompt([
       {
